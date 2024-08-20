@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rock, Paper, Scissors</title>
+  </head>
+<body>
+
+  <script>
+    function getComputerChoice() {
+        let randomNumber = Math.random();
+        var computerChoice;
+        if (randomNumber <=0.333) {
+            computerChoice = "Rock"
+        } else if (randomNumber > 0.333 & randomNumber <= 0.666) {
+            computerChoice = "Paper"
+        } else {
+            computerChoice = "Scissors"
+        }
+        return computerChoice.toLowerCase;
+    }
+
+
+    function getHumanChoice(){
+        let humanChoice = prompt("What will it be: Rock, Paper, or Scissors?");
+        if (humanChoice.toLowerCase() === "rock") {
+            alert("You chose: Rock");}
+        if (humanChoice.toLowerCase() === "paper") {
+            alert("You chose: Paper");}
+        if (humanChoice.toLowerCase() === "scissors") {
+            alert("You chose: Scissors");}
+        return humanChoice.toLowerCase();
+        }
+
+  </script>
+</body>
+</html
